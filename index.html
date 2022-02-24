@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>JavaScript</header>
+        <ul>
+            <li><a class="nav-link" href="#Qué_debes_conocer_previamente">Qué debes conocer previamente</a></li>
+            <li>
+                <a class="nav-link" href="#Dónde_encontrar_información">Dónde encontrar información</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Qué_es_JavaScript">Qué es JavaScript</a>
+            </li>
+            <li><a class="nav-link" href="#JavaScript_y_Java">JavaScript y Java</a></li>
+            <li><a class="nav-link" href="#ECMAScript">ECMAScript</a></li>
+            <li>
+                <a class="nav-link" href="#Cómo_empezar_con_JavaScript">Cómo empezar con JavaScript</a>
+            </li>
+            <li><a class="nav-link" href="#Hola_mundo">Hola mundo</a></li>
+            <li><a class="nav-link" href="#Referencia">Referencia</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Qué_debes_conocer_previamente">
+            <header>Qué debes conocer previamente</header>
+            <article>
+                <p>
+                    Esta guía presume que tienes los siguientes antecedentes básicos:
+                </p>
+                <ul>
+                    <li>
+                        Comprensión general de Internet y la World Wide Web.
+                    </li>
+                    <li>
+                        Buen conocimiento práctico del lenguaje de marcado de hipertexto (HTML).
+                    </li>
+                    <li>Alguna experiencia en programación. Si eres nuevo en la programación, prueba uno de los
+                        tutoriales vinculados en la página principal sobre JavaScript.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Dónde_encontrar_información">
+            <header>Dónde encontrar información</header>
+            <article>
+                <p>La documentación de JavaScript en MDN incluye lo siguiente:</p>
+
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/es/docs/Learn">Aprende desarrollo web</a> proporciona
+                        información para principiantes e introduce conceptos básicos de programación e Internet.
+                    </li>
+                    <li>La <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide">Guía de JavaScript</a>
+                        (esta guía) proporciona una descripción general sobre el lenguaje JavaScript y sus objetos.</li>
+                    <li>
+                        La <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference">Referencia de
+                            JavaScript</a> proporciona material de referencia detallado para JavaScript.
+                    </li>
+                </ul>
+                <p>Si eres nuevo en JavaScript, comienza con los artículos en el área de aprendizaje y la Guía de
+                    JavaScript. Una vez que tengas una firme comprensión de los fundamentos, puedes usar la Referencia
+                    de JavaScript para obtener más detalles sobre objetos y declaraciones individuales.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Qué_es_JavaScript">
+            <header>Qué es JavaScript</header>
+            <article>
+                <p>
+                    JavaScript es un lenguaje de programación multiplataforma orientado a objetos que se utiliza para
+                    hacer que las páginas web sean interactivas (p. ej., Que tienen animaciones complejas, botones en
+                    los que se puede hacer clic, menús emergentes, etc.). También hay versiones de JavaScript de lado
+                    del servidor más avanzadas, como Node.js, que te permiten agregar más funcionalidad a un sitio web
+                    que simplemente descargar archivos (como la colaboración en tiempo real entre varias computadoras).
+                    Dentro de un entorno (por ejemplo, un navegador web), JavaScript se puede conectar a los objetos de
+                    su entorno para proporcionar control programático sobre ellos.
+                </p>
+
+                <p>
+                    JavaScript contiene una biblioteca estándar de objetos, como <code>Array</code>, <code>Date</code> y
+                    <code>Math</code>, y un conjunto básico de elementos del lenguaje como operadores, estructuras de
+                    control y declaraciones. El núcleo de JavaScript se puede extender para una variedad de propósitos
+                    completándolo con objetos adicionales; por ejemplo:
+                </p>
+                <ul>
+                    <li>JavaScript de lado del cliente extiende el núcleo del lenguaje al proporcionar objetos para
+                        controlar un navegador y su Modelo de objetos de documento (DOM por Document Object Model). Por
+                        ejemplo, las extensiones de lado del cliente permiten que una aplicación coloque elementos en un
+                        formulario HTML y responda a eventos del usuario, como clics del mouse, formularios para ingreso
+                        de datos y navegación de páginas.</li>
+                    <li>JavaScript de lado del servidor amplía el núcleo del lenguaje al proporcionar objetos relevantes
+                        para ejecutar JavaScript en un servidor. Por ejemplo, las extensiones de lado del servidor
+                        permiten que una aplicación se comunique con una base de datos, brinde continuidad de
+                        información de una invocación a otra de la aplicación o realice manipulación de archivos en un
+                        servidor.</li>
+                </ul>
+                <p>Esto significa que en el navegador, JavaScript puede cambiar la apariencia de la página web (DOM). Y,
+                    del mismo modo, el JavaScript de Node.js en el servidor puede responder a solicitudes personalizadas
+                    desde el código escrito en el navegador.
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="JavaScript_y_Java">
+            <header>JavaScript y Java</header>
+            <article>
+                <p>JavaScript y Java son similares en algunos aspectos, pero fundamentalmente diferentes en otros. El
+                    lenguaje JavaScript se parece a Java, pero no tiene el tipado estático ni la fuerte verificación de
+                    tipos de Java. JavaScript sigue la mayoría de la sintaxis de las expresiones de Java, convenciones
+                    de nomenclatura y construcciones de control de flujo básicas, razón por la cual se cambió el nombre
+                    de LiveScript a JavaScript.
+
+                </p>
+                <p>A diferencia del sistema de clases en tiempo de compilación de Java creado por declaraciones,
+                    JavaScript admite un sistema de tiempo de ejecución basado en una pequeña cantidad de tipos de datos
+                    que representan valores numéricos, booleanos y de cadena. JavaScript tiene un modelo de objetos
+                    basado en prototipos en lugar del modelo de objetos basado en clases más común. El modelo basado en
+                    prototipos proporciona herencia dinámica; es decir, lo que se hereda puede variar en objetos
+                    individuales. JavaScript también admite funciones sin requisitos declarativos especiales. Las
+                    funciones pueden ser propiedades de objetos, ejecutándose como métodos débilmente tipados.
+
+                </p>
+                <p>JavaScript es un lenguaje de forma muy libre en comparación con Java. No es necesario declarar todas
+                    las variables, clases y métodos. No tienes que preocuparte por si los métodos son públicos, privados
+                    o protegidos, y no tienes que implementar interfaces. Las variables, los parámetros y los tipos de
+                    retorno de función no se tipifican explícitamente.
+
+                </p>
+                <p>Java es un lenguaje de programación basado en clases diseñado para una ejecución rápida y con
+                    seguridad de tipos. La seguridad de tipos significa, por ejemplo, que no puedes convertir un entero
+                    de Java en una referencia de objeto o acceder a la memoria privada corrompiendo el código de bytes
+                    de Java. El modelo basado en clases de Java significa que los programas constan exclusivamente de
+                    clases y sus métodos. La herencia de clases de Java y la tipificación fuerte generalmente requieren
+                    jerarquías de objetos estrechamente acopladas. Estos requisitos hacen que la programación Java sea
+                    más compleja que la programación JavaScript.
+
+                </p>
+                <p>Por el contrario, JavaScript desciende en espíritu de una línea de lenguajes más pequeños de tipado
+                    dinámico como HyperTalk y dBASE. Estos lenguajes de «scripting» ofrecen herramientas de programación
+                    a una audiencia mucho más amplia debido a su sintaxis más sencilla, funcionalidad especializada
+                    incorporada y requisitos mínimos para la creación de objetos.
+
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="ECMAScript">
+            <header>ECMAScript</header>
+            <p>
+                JavaScript está estandarizado en Ecma International, la asociación europea para estandarizar los
+                sistemas de información y comunicación (ECMA antes era un acrónimo para la Asociación Europea de
+                Fabricantes de Computadoras) para ofrecer un lenguaje de programación internacional estandarizado basado
+                en JavaScript. Esta versión estandarizada de JavaScript, denominada ECMAScript, se comporta de la misma
+                manera en todas las aplicaciones que admiten el estándar. Las empresas pueden utilizar el lenguaje
+                estándar abierto para desarrollar su implementación de JavaScript. El estándar ECMAScript está
+                documentado en la especificación ECMA-262.
+
+
+            </p>
+
+        </section>
+        <section class="main-section" id="Cómo_empezar_con_JavaScript">
+            <header>Cómo empezar con JavaScript</header>
+            <article>
+                <p>Comenzar con JavaScript es fácil: todo lo que necesitas es un navegador web moderno. Esta guía
+                    incluye algunas funciones de JavaScript que solo están disponibles actualmente en las últimas
+                    versiones de Firefox, por lo que se recomienda utilizar la versión más reciente de Firefox.
+
+                </p>
+                <p>
+                    La herramienta Consola web integrada en Firefox es útil para experimentar con JavaScript; Puedes
+                    usarla en dos modos: modo de entrada unilínea y modo de entrada multilínea.
+
+
+                </p>
+                <p>
+                    La Consola web te muestra información sobre la página web cargada actualmente, y también incluye un
+                    intérprete de JavaScript que puedes usar para ejecutar expresiones de JavaScript en la página
+                    actual.
+                </p>
+                <p>Para abrir la Consola web (Ctrl+Mayús+I en Windows y Linux o Cmd-Opción-K en Mac), abre el menú
+                    Herramientas en Firefox y selecciona "Desarrollador > Consola web".</p>
+                <p>La consola web aparece en la parte inferior de la ventana del navegador. En la parte inferior de la
+                    consola hay una línea de entrada que puedes usar para ingresar JavaScript, y la salida aparece en el
+                    panel de arriba:</p>
+                <img src="https://mdn.mozillademos.org/files/16569/2019-04-04_00-15-29.png" alt="consola web">
+                <p>La consola funciona exactamente de la misma manera que <code>eval</code>: devuelve la última
+                    expresión ingresada. En aras de la simplicidad, te puedes imaginar que cada vez que ingresas algo en
+                    la consola, en realidad estás rodeado por <code>console.log</code> alrededor de <code>eval</code>,
+                    así:</p>
+                <code class="codigo">function greetMe(tuNombre) {
+                    alert("Hola " + tuNombre)
+                    }
+                    console.log(eval('3 + 5'))</code>
+            </article>
+        </section>
+        <section class="main-section" id="Hola_mundo">
+            <header>Hola mundo</header>
+            <article>
+                <p>
+                    Para comenzar a escribir JavaScript, abre la Consola web en modo multilínea y escribe tu primer
+                    código "Hola mundo" en JavaScript:
+                </p>
+                <code class="codigo">(function(){
+                    "use strict";
+                    /* Inicio de tu código */
+                    function greetMe(tuNombre) {
+                    alert('Hola ' + tuNombre);
+                    }
+
+                    greetMe('Mundo');
+                    /* Fin de tu código */
+                    })();</code>
+                <p>Presiona Cmd+Intro o Ctrl+Intro (o haz clic en el botón Ejecutar), ¡para ver cómo se desarrolla en tu
+                    navegador!</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+            <p>Toda la documentación de esta página fue extraida de
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></p>
+        </section>
+    </main>
+</body>
+
+</html>
